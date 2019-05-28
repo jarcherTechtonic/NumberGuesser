@@ -1,0 +1,8 @@
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/bin/Debug/netstandard2.0/NumberGuesser_Moose.deps.json
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/bin/Debug/netstandard2.0/NumberGuesser_Moose.dll
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/bin/Debug/netstandard2.0/NumberGuesser_Moose.pdb
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/obj/Debug/netstandard2.0/NumberGuesser_Moose.csproj.CoreCompileInputs.cache
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/obj/Debug/netstandard2.0/NumberGuesser_Moose.AssemblyInfoInputs.cache
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/obj/Debug/netstandard2.0/NumberGuesser_Moose.AssemblyInfo.cs
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/obj/Debug/netstandard2.0/NumberGuesser_Moose.dll
+/Users/joshuaarcher/projects/NumberGuesser_Moose/NumberGuesser_Moose/obj/Debug/netstandard2.0/NumberGuesser_Moose.pdb

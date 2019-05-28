@@ -4,7 +4,7 @@ namespace NumberGuesser_Moose
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void GetAppInfo()
         {
             string appName = "Number Guesser";
             string appVersion = "1.0.0";
@@ -18,22 +18,36 @@ namespace NumberGuesser_Moose
 
             // Reset text color
             Console.ResetColor();
+        }
 
-            // Ask user's name
+        static void GreetUser()
+        {
             Console.WriteLine("What is your name?");
 
             // Get user's name
             string inputName = Console.ReadLine();
 
             Console.WriteLine($"Hello, {inputName}, let's play a game!");
+        }
+
+        static void PrintColorMessage(ConsoleColor color, string message)
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        public static void Main(string[] args)
+        {
+            GetAppInfo();
+
+            GreetUser();
 
             // Set initial correct number
             //int correctNumber = 7;
 
             while (true)
             {
-
-
 
                 Random randomNumber = new Random();
                 int correctNumber = randomNumber.Next(1, 11);
@@ -53,15 +67,8 @@ namespace NumberGuesser_Moose
                     // Check if it's a number
                     if (!int.TryParse(input, out guess))
                     {
-                        // Change text color
-                        Console.ForegroundColor = ConsoleColor.Red;
-
-                        // Error handing for if user enters a NAN
-                        Console.WriteLine("That's not a number, please try again:");
-
-                        // Reset text color
-                        Console.ResetColor();
-
+                        // Print color error message
+                        PrintColorMessage(ConsoleColor.Red, "Please use an actual number."); 
                         // Keeps going through code
                         continue;
                     }
@@ -71,26 +78,14 @@ namespace NumberGuesser_Moose
 
                     if (guess != correctNumber)
                     {
-                        // Change text color
-                        Console.ForegroundColor = ConsoleColor.Red;
-
-                        // Message if user guesses wrong number
-                        Console.WriteLine("Wrong number, please try again:");
-
-                        // Reset text color
-                        Console.ResetColor();
+                        // Print color error message
+                        PrintColorMessage(ConsoleColor.Red, "Wrong number, please try again.");
                     }
 
                 }
 
-                // Change text color
-                Console.ForegroundColor = ConsoleColor.Yellow;
-
-                // Message if user guesses wrong number
-                Console.WriteLine("CONGRATULATIONS! YOU WIN....... NOTHING :-)");
-
-                // Reset text color
-                Console.ResetColor();
+                // Print color success message
+                PrintColorMessage(ConsoleColor.Yellow, "CORRECT! OH BOY OH BOY OH BOY OH BOY!");
 
                 // Ask user to play again
                 Console.WriteLine("Play Again? ['Y' for yes | 'N' for no]");
